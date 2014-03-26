@@ -26,7 +26,7 @@ object PrintCountingFizzBuzzFinder {
 }
 
 trait FizzBuzzTerm {
-  var countOfPrintMessage = 0
+  private var countOfPrintMessage = 0
   def message: String
   def printMessage = {
     println(message)
@@ -35,10 +35,10 @@ trait FizzBuzzTerm {
   def printCount = println(s"$message : $countOfPrintMessage")
 }
 
-class Fizz() extends FizzBuzzTerm { def message = "Fizz"}
+class Fizz extends FizzBuzzTerm { def message = "Fizz"}
 
-class Buzz() extends FizzBuzzTerm { def message = "Buzz"}
+class Buzz extends FizzBuzzTerm { def message = "Buzz"}
 
-class FizzBuzz() extends FizzBuzzTerm { def message = "Fizz Buzz"}
+class FizzBuzz extends FizzBuzzTerm { def message = "Fizz Buzz"}
 
 class Number(val number: Int) extends FizzBuzzTerm { def message = number.toString }

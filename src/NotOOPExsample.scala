@@ -17,7 +17,7 @@ object NotOOPExample {
     }
   }
 
-  var countMap = mutable.Map[String, Int]()
+  val countMap = mutable.Map[String, Int]()
 
   def printlnWithCount(massage: String) = {
     println(massage)
