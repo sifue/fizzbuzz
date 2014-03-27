@@ -1,13 +1,11 @@
-object OOPExample {
-  def main(args: Array[String]) {
-    val limit = args(0).toInt
-    for (index <- 1 to limit) {
-      PrintCountingFizzBuzzFinder.find(index).printMessage
-    }
-    PrintCountingFizzBuzzFinder.fizz.printCount
-    PrintCountingFizzBuzzFinder.buzz.printCount
-    PrintCountingFizzBuzzFinder.fizzBuzz.printCount
+object OOPExample extends App {
+  val limit = args(0).toInt
+  for (index <- 1 to limit) {
+    PrintCountingFizzBuzzFinder.find(index).printMessage
   }
+  PrintCountingFizzBuzzFinder.fizz.printCount
+  PrintCountingFizzBuzzFinder.buzz.printCount
+  PrintCountingFizzBuzzFinder.fizzBuzz.printCount
 }
 
 object PrintCountingFizzBuzzFinder {
